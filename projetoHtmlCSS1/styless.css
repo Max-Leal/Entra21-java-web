@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(41, 44, 52);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10;
+    padding: 10;
+}
+
+h1 {
+    text-align: center;
+    color: #f5f3f3;
+    padding: 20px;
+    background-color: rgb(146, 54, 54);
+}
+
+p {
+    text-align: left;
+    font-size: 16px;
+    color: #fffefe;
+}
+
+button {
+    text-align: left;
+    font-size: 18px;
+    color: #f5f3f3;
+    background-color: rgb(146, 54, 54);
+    border: solid #701c1c;
+    border-radius: 5px;
+
+}
+
+input {
+    text-align: left;
+    font-size: 18px;
+    color: #f5f3f3;
+    background-color: rgb(146, 54, 54);
+    border: solid #701c1c;
+    border-radius: 25px;
+}
+
+a {
+    text-align: left;
+    font-size: 18px;
+    color: #f5f3f3;
+    background-color: rgb(146, 54, 54);
+    padding: 5px;
+    border: solid #701c1c;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+
+}
+
+label {
+    text-align: left;
+    font-size: 16px;
+    color: #fffefe;
+}
+
+div {
+    text-align: center;
+}
+
+#salvar {
+    background-color: #51a0fa;
+    border: solid #0057bb;
+    border-radius: 5px;
+    color: #bfddff;
+}
+
+#excluir {
+    background-color: rgb(202, 13, 0);
+    border: solid #701c1c;
+    border-radius: 5px;
+    color: #f8b7b7;
+}
+
+#cancelar {
+    background-color: silver;
+    border: solid #585858;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#titulo {
+    text-align: center;
+    color: #f8b7b7;
+    padding: 20px;
+    border: solid #701c1c;
+    border-radius: 25px;
+}
+
+.content {
+    background-color: aqua;
+    color: brown;
+
+}
