@@ -1,0 +1,63 @@
+body {
+    background-color: #fefae0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 12, 12);
+}
+
+h1 {
+    background-color: #d4a373;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+div {
+    background-color: #faedcd;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+a {
+    background-color: #7c855e; 
+    color: rgb(255, 255, 255); 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    display: inline-block; 
+    text-align: center; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+a:hover {
+    background-color: #606c38; 
+    transform: scale(1.05);
+}
+
+a:active {
+    background-color: #388e3c;  
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px; 
+    padding: 10px;
+    align-items: center;
+}
+
+.livro {
+    background-color: #e9edc9;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #000;
+
+}
+
+.livro > img {
+    width: 100px;
+    height: 150px;
+  
+}
