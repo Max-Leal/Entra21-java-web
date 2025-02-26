@@ -1,0 +1,139 @@
+/* Reset básico de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edede9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    min-height: 100%;
+    /* Garante que o body ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div {
+    background-color: #e3d5ca;
+    text-align: center;
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border: #e3d5ca;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #d5bdaf;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.flex-container>a {
+    background-color: #f5ebe0;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.flex-container>img {
+    margin: 10px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.flex-container>.nav-links>li {
+    background-color: #f5ebe0;
+    width: 100px;
+    margin: 1px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 5px;
+    transition:  background-color 0.3s ease;
+}
+
+.flex-container > .nav-links >li:hover {
+    background-color: #d6ccc2;
+    transform: scale(1.05);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.rodape {
+    color: rgb(107, 107, 107);
+    background-color: #f4f4f4;
+    /* Pode adicionar uma cor de fundo ao rodapé */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#center {
+    justify-content: center;
+}
+
+#space-bet {
+    justify-content: space-between;
+}
+
+#allBorder {
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+#rightBorder {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#leftBorder {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#topBorder {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#linkedin-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#linkedin-link:hover {
+    color: #0a66c2;
+}
+
+#linkedin-link i {
+    margin-right: 8px;
+}
+
+

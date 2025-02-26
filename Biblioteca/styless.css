@@ -61,3 +61,10 @@ a:active {
     height: 150px;
   
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #292c34;
+    align-items: center;
+}
