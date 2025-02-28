@@ -2,10 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    --cor-primaria: #fad8ab; 
+    --cor-secundaria: #ffeee0;
+    --cor-secundaria-transp: rgb(255, 238, 224, 0);
+    --cor-terciaria: #ffc181;
+    --cor-quartenaria: #e18437;
+    --cor-quintenaria: #ffc181;
 }
 
 body {
-  background-color: #edede9;
+  background-color: var(--cor-primaria);
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   min-height: 100%;
@@ -23,14 +29,14 @@ i {
 }
 
 hr {
-  background-color: #d5bdaf;
+  background-color: var(--cor-primaria);
   padding: 1px;
   border-radius: 10px;
-  border: solid 1px #d5bdaf;
+  border: solid 1px var(--cor-primaria);
 }
 
 div {
-  background-color: #e3d5ca;
+  background-color: var(--cor-secundaria);
   text-align: center;
   padding: 5px;
 }
@@ -38,20 +44,20 @@ div {
 input {
   padding: 5px;
   border-radius: 10px;
-  border: #e3d5ca;
+  border: var(--cor-secundaria);
   padding: 10px;
 }
 
 button {
   padding: 5px;
   border-radius: 10px;
-  border: solid #e3d5ca;
-  background-color: #f5ebe0;
+  border: solid var(--cor-secundaria);
+  background-color: var(--cor-terciaria);
   padding: 10px;
 }
 
 button:hover {
-  background-color: #d6ccc2;
+  background-color: var(--cor-quartenaria);
   transform: scale(1.03);
 }
 
@@ -60,17 +66,52 @@ img {
   height: 200px;
 }
 
+.rounded-mid {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 900px;
+  border-radius: 10px;
+}
+
+.imgback {
+  background-image: url('https://images.unsplash.com/photo-1508107536691-b1449928187d?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlibGlvdGVjYSUyMGFudGlnYXxlbnwwfHwwfHx8MA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imgback2 {
+  background-image: url('https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?cs=srgb&dl=pexels-juanpphotoandvideo-877971.jpg&fm=jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.visible {
+  position: relative;
+  overflow: hidden; 
+  opacity: 1;
+}
+.transparent {
+  position: relative;
+  overflow: hidden; 
+  background-color: rgb(255, 255, 255, 0);
+}
+
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  background-color: #d5bdaf;
+  background-color: var(--cor-primaria);
   align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
 .flex-container > a {
-  background-color: #f5ebe0;
+  background-color: var(--cor-terciaria);
   margin: 10px;
   text-align: center;
   font-size: 18px;
@@ -85,7 +126,7 @@ img {
 }
 
 .flex-container > .nav-links > li {
-  background-color: #f5ebe0;
+  background-color: var(--cor-terciaria);
   width: 100px;
   margin: 1px;
   text-align: center;
@@ -107,7 +148,7 @@ img {
 .mid-content > div {
   margin: 0 auto;
   position: relative;
-  background-color: #e3d5ca;
+  background-color: var(--cor-secundaria-transp);
   padding: 2em;
   width: 400px;
   height: 500px;
@@ -122,7 +163,7 @@ img {
   margin: 0 auto;
   width: 400;
   height: 500px;
-  background: #e3d5ca;
+  background: var(--cor-secundaria-transp);
   text-align: center;
   border-radius: 10px;
   position: relative;  
@@ -139,7 +180,7 @@ img {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: conic-gradient(from var(--angle), transparent 70%, #fdf0d5, #d62828, #c1121f, #780000);
+  background-image: conic-gradient(from var(--angle), transparent 70%, #ffc181, #e18437, #d86126, #c04b10);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -162,7 +203,7 @@ img {
 }
 
 .mid-content > div > div > div, .mid-content > div > div{
-  background-color: #d5bdaf;
+  background-color: var(--cor-primaria);
 }
 
 .logo {
@@ -170,7 +211,7 @@ img {
 }
 
 .flex-container > .nav-links > li:hover {
-  background-color: #d6ccc2;
+  background-color: var(--cor-quartenaria);
   transform: scale(1.03);
 }
 
@@ -190,7 +231,7 @@ img {
 
 .rodape {
   color: rgb(107, 107, 107);
-  background-color: #f4f4f4;
+  background-color: var(--cor-quintenaria);
   text-align: center;
   padding: 10px 0;
 }
@@ -199,6 +240,10 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+#login {
+  height: 350px;
 }
 
 #center {
