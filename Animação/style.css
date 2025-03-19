@@ -1,26 +1,62 @@
-  #toggle {
-    display: none;
-  }
+#toggle {
+  display: none;
+}
 
-  .ball {
-    width: 100px;
-    height: 100px;
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#toggle:checked + label .ball {
+  animation: run 10s infinite;
+}
+
+@keyframes run {
+  0% {
     background-color: red;
-    position: relative;
+    left: 0px;
+    top: 0px;
+    border-radius: 25%;
+  }
+  12% {
     border-radius: 50%;
-    cursor: pointer; 
-    display: inline-block;
   }
-
-  #toggle:checked + label .ball {
-    animation: run 200s infinite;
+  25% {
+    background-color: yellow;
+    left: 500px;
+    top: 0px;
+    border-radius: 25%;
   }
-
-  @keyframes run {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+  37% {
+    border-radius: 50%;
   }
-  
+  50% {
+    background-color: blue;
+    left: 500px;
+    top: 500px;
+    border-radius: 25%;
+  }
+  62% {
+    border-radius: 50%;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 500px;
+    border-radius: 25%;
+  }
+  87% {
+    border-radius: 50%;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+    border-radius: 25%;
+  }
+}

@@ -1,67 +1,53 @@
 * {
-    --firstC: #1b263b;
-    --secondC: #0d1b2a;
-    --thirdC: #415a77;
-    --fourthC: #caf0f8;
-    --fifthC: #ade8f4;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--fourthC);
-    margin: 0;
-    box-sizing: border-box;
+  --firstC: #1b263b;
+  --secondC: #0d1b2a;
+  --thirdC: #415a77;
+  --fourthC: #caf0f8;
+  --fifthC: #ade8f4;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--fourthC);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--firstC);
-
+  background-color: var(--firstC);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.border {
-    border: 1px solid var(--fourthC);
+.card {
+  background-color: var(--secondC);
+  border: 3px solid var(--fourthC);
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 @media only screen and (max-width:600px) {
-    .border { border: 3px solid #ff0000;}
+  .card {
+      border-color: #ff0000;
+      background-color: #2d2d2d;
+  }
 }
-@media only screen and (min-width:600px) {
-    .border { border: 3px solid #1900ff;}
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+  .card {
+      border-color: #1900ff;
+      background-color: #0e1a2b;
+  }
 }
+
 @media only screen and (min-width:768px) {
-    .border { border: 3px solid #e5ff00;}
-}
-
-.grid {
-    display: grid;
-    gap: 10px;
-
-    grid-template-areas: 
-    "header header"
-    "menu content"
-    "footer footer";
-
-    grid-template-columns: 1fr 3fr;
-    justify-content: space-evenly;
-    gap: 10px;
-    background-color: var(--secondC);
-    padding: 5px;
-}
-
-.grid > div {
-    background-color: var(--thirdC);
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.grid > div.header {
-  grid-area: header;
-  text-align: center;
-}
-.grid > div.menu {
-  grid-area: menu;
-}
-.grid > div.content {
-  grid-area: content;
-}
-.grid > div.footer {
-  grid-area: footer;
+  .card {
+      border-color: #e5ff00;
+      background-color: var(--secondC);
+  }
 }
